@@ -1,0 +1,117 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Images/Food8.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+    font-family: "Sacramento", cursive;
+    position: relative;
+}  
+
+.recipe-details {
+    background: radial-gradient(circle at center, #f1ba06 10%, #e97b22 40%, #da4804 80%);
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 70%;
+    height: 90%;
+    max-width: 800px;
+    color: white;
+}
+
+.recipe-details img {
+    width: 12%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.Back-Button {
+    position: absolute;
+    top: 12%;  
+    left: 72%;
+    transform: translate(-50%, -50%);
+    width: 110px;  
+    height: 110px; 
+    border-radius: 50%; 
+    border: 3px solid black;
+    color: white;
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+    overflow: hidden; 
+    text-decoration: none;
+}
+
+.Back-Button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/Mandala.png');
+    background-size: cover; 
+    background-position: center;
+    border-radius: 50%; 
+    animation: pulse 10s infinite ease-in-out;
+    z-index: -1; 
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1) rotate(0deg); 
+    }
+    25% {
+        transform: scale(2) rotate(50deg); 
+    }
+    50% {
+        transform: scale(1) rotate(100deg); 
+    }
+    75% {
+        transform: scale(2) rotate(150deg); 
+    }
+}
+
+.curtain-wrapper {
+    display: flex;  
+    justify-content: center; 
+    align-items: center; 
+    position: relative;  
+    width: 100vw; 
+    height: 100vh;  
+}
+
+.curtain-left, .curtain-right {
+    position: absolute;
+    top: -5vh; 
+    bottom: 0;
+    width: 40vw; 
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.curtain-left {
+    left: -8vw;
+    background-image: url('../Images/Curtain_Left.png'); 
+}
+
+.curtain-right {
+    right: -8vw;
+    background-image: url('../Images/Curtain_Right.png'); 
+}
+

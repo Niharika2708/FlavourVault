@@ -1,0 +1,96 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Images/Food8.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+    font-family: "Sacramento", cursive;
+    position: relative;
+}  
+
+h2 {
+    font-family: "Sacramento", cursive;  
+    font-weight: 500;    
+    text-shadow: 
+        1px 0 black, 
+        0 1px black, 
+        -1px 0 black, 
+        0 -1px black;            
+    color: black;                       
+    text-align: center;                 
+    position: absolute;                  
+    top: 7%;                           
+    left: 50%;                           
+    transform: translateX(-50%);         
+    font-size: 25px;                    
+}
+
+
+.curtain-wrapper {
+    display: flex;  
+    justify-content: center; 
+    align-items: center; 
+    position: relative;  
+    width: 100vw; 
+    height: 100vh;  
+}
+
+.curtain-left, .curtain-right {
+    position: absolute;
+    top: -5vh; 
+    bottom: 0;
+    width: 40vw; 
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.curtain-left {
+    left: -8vw;
+    background-image: url('../Images/Curtain_Left.png'); 
+}
+
+.curtain-right {
+    right: -8vw;
+    background-image: url('../Images/Curtain_Right.png'); 
+}
+
+.vertical-menu {
+    z-index: 1;
+    text-align: center;
+    position: relative; 
+}
+
+.vertical-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vertical-menu ul li {
+    margin-bottom: 20px; 
+}
+
+.vertical-menu ul li a {
+    text-decoration: none;
+    color: black; 
+    font-size: 24px; 
+    font-family: "Sacramento", cursive;
+}
+
+.vertical-menu ul li a:hover {
+    font-weight: 900;
+    text-shadow: 
+    1px 0 #a81618, 
+    0 1px #a81618, 
+    -1px 0 #a81618, 
+    0 -1px #a81618; 
+    color: #a81618; 
+} 
+

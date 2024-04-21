@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add - Flavour Vault</title>
+    <link rel="stylesheet" href="CSS/Add.css">
+
+</head>
+
+<body>
+
+    <div class="curtain-wrapper">
+        <div class="curtain-left"></div>
+
+        <div class="form-container">
+
+            <h1>Add your recipe</h1>
+
+            <div class="image-container" id="imagePreviewContainer"></div>
+            
+            <form action="/submit-recipe" method="POST">
+
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" name="recipe-name" required>
+    
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" placeholder="List your ingredients separated by commas" required></textarea>
+    
+                <label for="instructions">Cooking Instructions:</label>
+                <textarea id="instructions" name="instructions" placeholder="Enter your step-by-step instructions" required></textarea>
+    
+                <label for="photo">Upload a Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+    
+                <button type="button" onclick="saveRecipe()">Submit Recipe</button>
+            </form>
+        </div>
+
+        <script src="js/addRecipe.js"></script>
+
+        <a href="Home.html" class="Back-Button">Back</a>
+        <div class="curtain-right"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Images/Food4.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+    font-family: "Sacramento", cursive;
+    position: relative;
+}  
+
+.Back-Button {
+    position: absolute;
+    top: 10%;  
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 110px;  
+    height: 110px; 
+    border-radius: 50%; 
+    border: 3px solid rgb(251, 251, 251);
+    color: white;
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+    overflow: hidden; 
+    text-decoration: none;
+}
+
+.Back-Button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/Mandala.png');
+    background-size: cover; 
+    background-position: center;
+    border-radius: 50%; 
+    animation: pulse 10s infinite ease-in-out;
+    z-index: -1; 
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1) rotate(0deg); 
+    }
+    25% {
+        transform: scale(2) rotate(50deg); 
+    }
+    50% {
+        transform: scale(1) rotate(100deg); 
+    }
+    75% {
+        transform: scale(2) rotate(150deg); 
+    }
+}
+
+.form-container {
+    background: radial-gradient(circle at center, #c85b51 10%, #b32b13 40%, #661308 80%);
+    padding: 50px 40px;
+    border-radius: 50px;
+    width: 50%; 
+    max-width: 650px;
+    color: #ffa600; 
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 30px;
+    font-family: "Sacramento", cursive;
+    color: #ffa600;
+}
+
+input[type="text"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #d8acac;
+    border-radius: 10px;
+    background-color: #f5ede6;
+}
+
+button {
+    background-color: #118715; 
+    color: white;
+    padding: 10px 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: "Sacramento", cursive;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #38a33e;
+}
+
+.image-container {
+    position: relative;  
+    width: 100%;  
+    height: 10px;  
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+}
+
+.centered-image {
+    width: 20%; 
+    height: auto;
+    transform: translateY(-40px);  
+}
+
+.curtain-wrapper {
+    display: flex;  
+    justify-content: center; 
+    align-items: center; 
+    position: relative;  
+    width: 100vw; 
+    height: 100vh;  
+}
+
+.curtain-left, .curtain-right {
+    position: absolute;
+    top: -5vh; 
+    bottom: 0;
+    width: 40vw; 
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.curtain-left {
+    left: -8vw;
+    background-image: url('../Images/Curtain_Left.png'); 
+}
+
+.curtain-right {
+    right: -8vw;
+    background-image: url('../Images/Curtain_Right.png'); 
+}
+
